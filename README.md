@@ -1,39 +1,71 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# SDC Consulting - Flutter Core
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+This package contains a set of predefined and pre-styled widgets and utilities to easily setup new projects.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+# Getting started
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+To start using the package, simply add this repo to your pubspec.yaml:
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  flutter_core:
+    git:
+      url: https://github.com/SDC-Consulting-BE/flutter-core
+      ref: 'main'
 ```
 
-## Additional information
+Subsequently, there are a couple of steps required for the complete experience:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+### Fonts
+
+To use the predefined font, add the following to the pubspec.yaml file:
+
+```yaml
+flutter:
+  fonts:
+    - family: base
+      fonts:
+        - asset: packages/flutter_core/fonts/base/thin.ttf
+          weight: 100
+        - asset: packages/flutter_core/fonts/base/thinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: packages/flutter_core/fonts/base/light.ttf
+          weight: 300
+        - asset: packages/flutter_core/fonts/base/lightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: packages/flutter_core/fonts/base/regular.ttf
+          weight: 400
+        - asset: packages/flutter_core/fonts/base/italic.ttf
+          weight: 400
+          style: italic
+        - asset: packages/flutter_core/fonts/base/medium.ttf
+          weight: 500
+        - asset: packages/flutter_core/fonts/base/mediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: packages/flutter_core/fonts/base/bold.ttf
+          weight: 700
+        - asset: packages/flutter_core/fonts/base/boldItalic.ttf
+          weight: 700
+          style: italic
+```
+
+### Analysis options
+
+To make use of the predefined analysis_options, create the analysis_options.yaml file and add the following line:
+
+```yaml
+include: package:flutter_core/analysis_options/analysis_options.yaml
+```
+
+The imported file contains additional instructions should they be necessary.
+
+# Usage
+
+For a list of the available widgets and utilities I refer you to the component library. [*TODO: insert link*]
+
+### Setup
+
+WIP
