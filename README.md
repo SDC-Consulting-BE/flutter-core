@@ -1,2 +1,2 @@
 # flutter-core
-Flutter plugin containing my personal design system
+Flutter package containing my personal design system
