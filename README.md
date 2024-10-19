@@ -54,7 +54,14 @@ flutter:
 
 ### Analysis options
 
-To make use of the predefined analysis_options, create the analysis_options.yaml file and add the following line:
+To make use of the predefined analysis_options, add the flutter_lints package to your dev_dependencies
+
+```yaml
+dev_dependencies:
+  flutter_lints: ^5.0.0
+```
+
+Then create the analysis_options.yaml file in your project root and add the following line:
 
 ```yaml
 include: package:flutter_core/analysis_options.yaml
