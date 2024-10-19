@@ -57,7 +57,7 @@ flutter:
 To make use of the predefined analysis_options, create the analysis_options.yaml file and add the following line:
 
 ```yaml
-include: package:flutter_core/analysis_options/analysis_options.yaml
+include: package:flutter_core/analysis_options.yaml
 ```
 
 The imported file contains additional instructions should they be necessary.
