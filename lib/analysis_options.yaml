@@ -6,6 +6,7 @@
 #   - For a line of code:         // ignore: rule_name1, rule_name2
 #   - In the pubspec.yaml file:   # ignore: rule_name1, rule_name2
 
+include: package:flutter_lints/flutter.yaml
 
 # Exclude generated files from the Linter
 analyzer:
